@@ -1,0 +1,18 @@
+\docType{data}
+\name{Sushi_ChIPSeq_severalfactors.bed}
+\alias{Sushi_ChIPSeq_severalfactors.bed}
+\title{Sushi_ChIPSeq_severalfactors.bed}
+\format{bed format}
+\source{
+Consortium, T. E. P. An integrated encyclopedia of DNA
+elements in the human genome. Nature 489, 57-74 (2012).
+}
+\usage{
+Sushi_ChIPSeq_severalfactors.bed
+}
+\description{
+This data set describes binding sites for multiple factors
+in K562 cells as determined by ChIP-seq with coordinates
+based on the NCBI36 / hg18 genome build.
+}
+

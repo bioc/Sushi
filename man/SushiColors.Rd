@@ -1,0 +1,28 @@
+\name{SushiColors}
+\alias{SushiColors}
+\title{Generates a Sushi color palette}
+\usage{
+SushiColors(palette = "fire")
+}
+\arguments{
+  \item{palette}{The name of the Sushi palette to return.
+  For list of available palettes try (SushiColors(list))}
+}
+\description{
+Generates a Sushi color palette
+}
+\examples{
+plot(1,xlab='',xaxt='n',ylab='',yaxt='n',xlim=c(0,8),ylim=c(2,8),type='n',bg="grey")
+for (i in (2:7))
+{
+  points(x=(1:i),y=rep(i,i),bg=SushiColors(i)(i),cex=3,pch=21)
+
+}
+
+axis(side=2,at=(2:7),labels=(2:7),las=2)
+axis(side=1,at=(1:7),labels=(1:7))
+mtext("SushiColors",side=3,font=2, line=1, cex=1.5)
+mtext("colors",side=1,font=2, line=2)
+mtext("palette",side=2,font=2, line=2)
+}
+
