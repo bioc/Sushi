@@ -1,0 +1,13 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+.Rproj.user
+.Rhistory
+.RData
+.DS_Store
+vignettes/Sushi-*.pdf
+vignettes/*.png
+vignettes/Sushi.log
+vignettes/Sushi.synctex.gz
+vignettes/Sushi-concordance.tex
+vignettes/Sushi.tex
+vignettes/Sushi.toc
