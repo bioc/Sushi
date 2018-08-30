@@ -18,8 +18,9 @@ Detailed usage examples are available in the [Vignette](https://github.com/dphan
 1. Install release verson with Bioconductor:
 
  ```
- source("http://bioconductor.org/biocLite.R")
- biocLite("Sushi")
+ if (!requireNamespace("BiocManager", quietly=TRUE))
+     install.packages("BiocManager")
+ BiocManager::install("Sushi")
  ```
 
  Note: R 3.1 is required for installation via Bioconductor. The newest version of R can be downloaded at (www.r-project.org/).  Installation via Bioconductor also requires libcurl and libxml2 which may not be be standard with some Linux distributions and are available for download at (http://curl.haxx.se/libcurl/ and http://xmlsoft.org/, respectively.
@@ -36,9 +37,10 @@ Detailed usage examples are available in the [Vignette](https://github.com/dphan
 3. The development version of Sushi can be downloaded via Bioconductor
 
  ```
- source("http://bioconductor.org/biocLite.R")
+ if (!requireNamespace("BiocManager", quietly=TRUE))
+     install.packages("BiocManager")
  useDevel()
- biocLite("Sushi")
+ BiocManager::install("Sushi")
  ```
 
  or via source at http://www.bioconductor.org/packages/devel/bioc/html/Sushi.html
