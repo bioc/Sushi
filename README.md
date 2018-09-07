@@ -39,7 +39,7 @@ Detailed usage examples are available in the [Vignette](https://github.com/dphan
  ```
  if (!requireNamespace("BiocManager", quietly=TRUE))
      install.packages("BiocManager")
- useDevel()
+ BiocManager::install(version = "devel")
  BiocManager::install("Sushi")
  ```
 
